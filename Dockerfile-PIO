@@ -1,0 +1,15 @@
+FROM steven2ykwjoe
+
+ADD universal-recommender /universal-recommender
+
+RUN sudo apt-get update\
+  && sudo apt-get install -y python3-pip\
+  && sudo apt-get install -y vim 
+
+#CMD docker run -it -p 8000:8000 docker-ur /bin/bash
+
+#ADD sv /etc/service
+
+#Runit
+#RUN apt-get install -y --no-install-recommends runit
+#CMD bash -c 'export > /etc/envvars && /usr/sbin/runsvdir-start'
